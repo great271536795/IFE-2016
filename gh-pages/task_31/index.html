@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>H31 | 表单（三）联动</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="form-container">
+    <div id="radio-select" onchange="radioChange()">
+        <div class="radio">
+            <label>
+            <input type="radio" name="optionsRadios" id="inSchoolRadio" checked> 在校生
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+            <input type="radio" name="optionsRadios" id="outschoolRadio"> 非在校生
+            </label>
+        </div>
+    </div>
+    <div id="select-container">
+        <div class="inSchool">
+            <span>学校</span>
+            <select class="select" id="select1" onchange="selectDistrict()">
+                <option value="bj">北京</option>
+                <option value="sh">上海</option>
+                <option value="hz">杭州</option>
+            </select>
+            <select class="select" id="select2">
+                <option value="pku">北京大学</option>
+                <option value="thu">清华大学</option>
+                <option value="bhu">北京航空航天大学</option>    
+            </select>
+        </div>
+        <div class="outSchool hide">
+            <span>就业单位</span>
+            <input type="text" class="input">
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

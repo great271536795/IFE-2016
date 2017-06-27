@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+table {
+	overflow: hidden;
+	zoom: 1;
+	margin: 20px 0;
+}
+
+table td {
+	padding: 10px;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+}
+
+.visible {
+	display: table-row;
+}
+
+.right {
+	color: green;
+	display: table-row;
+}
+
+.wrong {
+	color: red;
+	display: table-row;
+}
+
+.hint {
+	display: none;
+}
+
+label {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	text-align: right;
+}
+
+button {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+	width: 50px;
+}
